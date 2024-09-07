@@ -1,6 +1,6 @@
 # macOS Terminal Setup Script
 
-This script automates the setup of your macOS development environment. It uses a `Makefile` to install and configure essential tools and applications.
+This script automates the setup of your macOS development environment. It uses a `bash` script to install and configure essential tools and applications.
 
 ## Features
 
@@ -21,19 +21,19 @@ This script automates the setup of your macOS development environment. It uses a
 
 ## Usage
 
-1. **Clone the repository** or navigate to the directory containing the `Makefile`.
+1. **Clone the repository** or navigate to the directory containing the `setup.sh` script.
 
-2. **Run the script using `make`**:
+2. **Run the script using `bash`**:
 
     ```bash
-    make
+    ./setup.sh
     ```
 
-   This will execute all the steps in the Makefile.
+   This will execute all the steps in the script.
 
 ## File Structure
 
-- `Makefile`: Contains all the commands to set up the environment.
+- `setup.sh`: Contains all the commands to set up the environment.
 - `fonts/`: Directory containing font files to be installed.
 - `starship/starship.toml`: Starship configuration file.
 - `zshrc`: Zsh configuration file to be appended to `~/.zshrc`.
@@ -41,9 +41,9 @@ This script automates the setup of your macOS development environment. It uses a
 ## Notes
 
 - Ensure you have administrative privileges as some commands may require `sudo`.
-- Customize the `Makefile` according to your preferences before running it.
+- Customize the `setup.sh` according to your preferences before running it.
 
-## Warp interface Configuration
+## Warp Interface Configuration
 
 For advanced configurations in Warp, follow these steps using the provided images for reference:
 
@@ -54,7 +54,7 @@ For advanced configurations in Warp, follow these steps using the provided image
    - Go to `Settings` > `Appearance`.
    - Click on the theme selection area:
      ![Click to change theme](https://i.imgur.com/Az5exOm.png)
-   - In the sidebar, select the desired theme(I recomend "Iterm", but you can also go "Outrun" or "Warp"):
+   - In the sidebar, select the desired theme (I recommend "Iterm", but you can also choose "Outrun" or "Warp"):
      ![Select Theme](https://imgur.com/yQYdzVF.png)
 
 3. **Configure the Prompt**:
@@ -94,4 +94,4 @@ To configure Visual Studio Code to use Hack Nerd Font for the integrated termina
 
 4. **Save the `settings.json` File**:
    - Save the changes to the `settings.json` file.
-
+   
