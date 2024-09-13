@@ -227,6 +227,9 @@ symbol = " "
 [zig]
 symbol = " "
 
+[bun]
+symbol = "  "
+
 [kubernetes]
 format = 'via [󱃾 $context\($namespace\)](bold purple) '
 disabled = true
